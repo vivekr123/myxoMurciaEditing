@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	$("p").click(function(){
+
+		alert("Object added below");
+
+		var words = $(this).text();
+
+		$('#comments').val(function(i, text) {
+    return  text + words + " : " + "\n";
+});
+
+	});
+
+	});
+
+	</script>
+</head>
+
+<header>
+
+	<img src="universidad_de_murcia.jpg">
+
+	<h2>Research Group</h2>
+	<h2>of</h2>
+	<h1>Myxococcus xanthus</h1>
+
+
+
+</header>
+
+	<div>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="members.html">Members</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="links.html">Links</a></li>
+		</ul>
+	</nav>
+	</div>
+
+	<div id="gradient-strip">
+
+	</div>
+
+	<body>
+
+		<div class="homeBody">
+
+		<img src="Group4.jpg" style="float:right;height:35%;width:35%;margin-right:5em;margin-top:3em;">
+		<br>
+		<p style="text-align:center">Paragraph about us</p>
+
+		</div>
+
+
+	</body>
+
+	<form method="GET" action="mailto:vivek.r.2018@gmail.com" enctype="text/plain" style="margin-top:20%">
+		<div>Subject</div>
+		<input type="text" name="subject" value="About"/>
+
+		<div>Message</div>
+		<textarea name="body" id="comments" style="height:12em; width:100%"></textarea>
+
+		<br/>
+		<input type="submit" value="Send" />
+
+	</form>
+
+
+</html>
